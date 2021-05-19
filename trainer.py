@@ -5,7 +5,7 @@
 
 
 import sys
-sys.path.insert(0, "../text-to-image-using-GAN/models")
+sys.path.insert(0, "/content/text-to-image-using-GAN/models")
 # import nbimporter
 
 
@@ -54,7 +54,7 @@ class Trainer(object):
             self.dataset = Text2ImageDataset(config['flowers_dataset_path'], split=split)
         else:
             print('Dataset not supported, please select either birds or flowers.')
-            exit()
+           
         
         #print "Image = ",len(self.dataset)
         self.noise_dim = 100
